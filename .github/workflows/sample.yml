@@ -1,0 +1,11 @@
+name: hello 
+on:  
+  workflow_dispatch:    
+    inputs:      
+      myInput:        
+      default: "my input value"
+  runs-on : ubuntu-latest
+  simple:
+    steps:
+      - name: print 
+        run: echo "hello"
